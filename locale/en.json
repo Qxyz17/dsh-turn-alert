@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Turn Notifications",
+    "description": "Posts a Windows notification and plays the matching built-in system sound when a turn completes, fails, or waits for your answer."
+  }
+}

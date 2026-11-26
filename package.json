@@ -1,0 +1,49 @@
+{
+  "name": "dsh-turn-alert",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Windows desktop notifications with the built-in system sound for DeepSeek Harness turns: completion, failure, and questions waiting for an answer.",
+  "license": "MIT",
+  "author": "Qxyz17",
+  "os": [
+    "win32"
+  ],
+  "keywords": [
+    "deepseek",
+    "dsh",
+    "dsh-plugin",
+    "windows",
+    "notification",
+    "toast",
+    "sound"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Qxyz17/dsh-turn-alert.git"
+  },
+  "homepage": "https://github.com/Qxyz17/dsh-turn-alert#readme",
+  "bugs": {
+    "url": "https://github.com/Qxyz17/dsh-turn-alert/issues"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "notify.ps1",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}

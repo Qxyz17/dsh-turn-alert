@@ -1,0 +1,16 @@
+# Turn notifications for DSH on Windows.
+# A normal turn end, a failed turn, and a pending question each post a Windows
+# notification and play the matching built-in system sound.
+- insert:
+    - id: dsh-turn-alert
+      name: 'dsh-turn-alert'
+      config:
+        enabled: true
+        onCompleted: true
+        onError: true
+        onQuestion: true
+        onApproval: true
+        onInterrupted: false
+        sound: true
+        includeSubagents: false
+        settleMs: 1200
